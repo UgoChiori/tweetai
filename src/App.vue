@@ -1,6 +1,7 @@
 
-<template>
-  <div>
+<template >
+  <div class="mx-auto p-4 bg-cover bg-center bg-gray-300"
+ >
     <autobot-count-vue />
     <autobot-details/>
   </div>
@@ -12,16 +13,5 @@ import AutobotDetails from "./components/AutobotDetails.vue";
 </script>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>

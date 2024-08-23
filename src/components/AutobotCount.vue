@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Autobot Count</h1>
-    <p>{{ count }}</p>
+  <div class=" align-center">
+    <h1 class="text-3xl font-bold text-center">Autobot Count</h1>
+    <p class="text-3xl font-normal text-center">{{ count }}</p>
   </div>
 </template>
 
