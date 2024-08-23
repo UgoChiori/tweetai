@@ -1,6 +1,6 @@
 
 <template >
-  <div class="mx-auto p-4 bg-cover bg-center bg-gray-300"
+  <div class="mx-auto p-4 bg-cover bg-center bg-pink-300"
  >
     <autobot-count-vue />
     <autobot-details/>

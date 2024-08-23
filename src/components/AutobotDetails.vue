@@ -2,19 +2,19 @@
     <div class="max-w-2xl mx-auto p-4 bg-cover bg-center "
     
     >
-      <h1 class="text-3xl font-normal text-center mb-6">Autobots</h1>
+      <h1 class="text-3xl text-pink-700 font-normal text-center mb-6">Autobots 🤖</h1>
       <ul class="space-y-4">
         <li
           v-for="autobot in autobots"
           :key="autobot.id"
-          class="p-4 bg-grey shadow rounded-lg"
+          class="p-4 bg-pink shadow rounded-lg"
         >
           <div class="flex justify-between items-center">
-            <span class="text-xl font-normal">{{ autobot.name }}</span>
+            <span class="text-xl text-pink-700 font-normal">{{ autobot.name }}</span>
             <button
               @click="togglePosts(autobot.id)"
               :class="{
-                'bg-black hover:bg-gray-500': selectedAutobotId !== autobot.id,
+                'bg-pink-700 hover:bg-pink-400': selectedAutobotId !== autobot.id,
                 'bg-red-500 hover:bg-red-600': selectedAutobotId === autobot.id,
               }"
               class="text-white px-4 py-2 rounded transition-colors duration-300 ease-in-out"
@@ -26,14 +26,14 @@
             <li
               v-for="post in posts"
               :key="post.id"
-              class="p-4 bg-gray-100 rounded-lg"
+              class="p-4 bg-pink border border-[pink-700] rounded-lg"
             >
               <div class="flex justify-between items-center">
-                <span class="font-semibold">{{ post.title }}</span>
+                <span class="font-normal text-pink-700">{{ post.title }}</span>
                 <button
                   @click="toggleComments(post.id)"
                   :class="{
-                    'bg-black hover:bg-gray-500': selectedPostId !== post.id,
+                    'bg-pink-700 hover:bg-pink-400': selectedPostId !== post.id,
                     'bg-red-500 hover:bg-red-600': selectedPostId === post.id,
                   }"
                   class="text-white px-4 py-2 rounded transition-colors duration-300 ease-in-out"
@@ -43,11 +43,11 @@
                     : 'Show Comments' }}
                 </button>
               </div>
-              <ul v-if="selectedPostId === post.id" class="mt-3 space-y-2 pl-4 border-l-2 border-green-500">
+              <ul v-if="selectedPostId === post.id" class="mt-3 space-y-2 pl-4  borde">
                 <li
                   v-for="comment in uniqueComments"
                   :key="comment.id"
-                  class="pl-2 text-gray-700"
+                  class="pl-2 text-pink-700"
                 >
                   {{ truncateComment(comment.body) }}
                 </li>

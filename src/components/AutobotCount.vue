@@ -1,7 +1,7 @@
 <template>
   <div class=" align-center">
-    <h1 class="text-3xl font-bold text-center">Autobot Count</h1>
-    <p class="text-3xl font-normal text-center">{{ count }}</p>
+    <h1 class="text-3xl text-pink-700 font-bold text-center">B🤖TS</h1>
+    <p class="text-3xl text-pink-700  font-normal text-center">{{ count }}</p>
   </div>
 </template>
 
