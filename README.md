@@ -73,7 +73,7 @@ For more information on the backend, visit the [GitHub repository](https://githu
 ## Hosted Application
 You can view the live application at https://tweetai-rahslzvhu-ugochioris-projects.vercel.app/.
 
-# Note: The data may not display correctly due to limitations in the backend's MySQL hosting services, which are not free. This project is intended for testing purposes and may not show live data outside of localhost.
+Note: The data may not display correctly due to limitations in the backend's MySQL hosting services, which are not free. This project is intended for testing purposes and may not show live data outside of localhost.
 
 ## GitHub Repository
 
