@@ -6,6 +6,7 @@ import "vue-toast-notification/dist/theme-sugar.css";
 
 const app = createApp(App);
 
+// toast 
 app.use(VueToast);
 
 app.mount("#app");
