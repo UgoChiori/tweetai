@@ -99,7 +99,8 @@
   
       const fetchAutobots = async () => {
         try {
-          const response = await axios.get("http://localhost:2000/autobots");
+          // const response = await axios.get("http://localhost:2000/autobots");
+          const response = await axios.get("https://tweetai-backend-x755.vercel.app/");
           autobots.value = response.data;
         } catch (error) {
           console.error("Error fetching Autobots:", error);
