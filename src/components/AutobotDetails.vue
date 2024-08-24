@@ -99,7 +99,7 @@
   
       const fetchAutobots = async () => {
         try {
-          // const response = await axios.get("http://localhost:2000/autobots");
+          // const response = await axios.get("http://localhost:2020/autobots");
           const response = await axios.get("https://tweetai-backend-x755.vercel.app/");
           autobots.value = response.data;
         } catch (error) {
@@ -110,7 +110,8 @@
       const fetchPosts = async (autobotId: number): Promise<void> => {
         try {
           const response = await axios.get(
-            `http://localhost:2000/autobots/${autobotId}/posts`
+            // `http://localhost:2020/autobots/${autobotId}/posts`
+            `https://tweetai-backend-x755.vercel.app/autobots/${autobotId}/posts`
           );
           posts.value = response.data;
           selectedPostId.value = null;
@@ -129,7 +130,8 @@
       const fetchComments = async (postId: number) => {
         try {
           const response = await axios.get(
-            `http://localhost:2000/posts/${postId}/comments`
+            // `http://localhost2020/posts/${postId}/comments`
+            `https://tweetai-backend-x755.vercel.app/posts/${postId}/comments`
           );
           const newComments = response.data;
           // Prevent duplicate comments

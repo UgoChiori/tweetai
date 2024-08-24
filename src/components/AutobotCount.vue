@@ -16,7 +16,8 @@ export default {
 
     const fetchAutobotCount = async () => {
       try {
-        const response = await axios.get('http://localhost:2000/autobot-count');
+        const response = await axios.get('https://tweetai-backend-x755.vercel.app/autobot-count');
+        // const response = await axios.get('http://localhost:2020/autobot-count');
         count.value = response.data.count;
       } catch (error) {
         console.error('Error fetching Autobot count:', error);
